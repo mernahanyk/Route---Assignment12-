@@ -90,23 +90,11 @@
       />
     </noscript>
 
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="imgs/imgs/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon.png" />
     <!-- Main Stylesheet -->
-
-    <script>
-      tailwind.config = { darkMode: "class" };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-
-    <script>
-      tailwind.config = { darkMode: "class" };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" crossorigin href="./assets/css/style.css"/>
   </head>
   <body
     class="font-tajawal bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-slate-900 dark:text-white transition-colors duration-300"
@@ -3164,17 +3152,18 @@
           <div>
             <h4
               class="text-sm font-bold text-slate-500 dark:text-slate-400 mb-4 uppercase tracking-wider flex items-center gap-2"
-            >
+              >
               <i class="fa-solid fa-palette text-xs" aria-hidden="true"></i>
               لون الثيم
             </h4>
-            <!-- Grid for colors will be populated by JS or simple HTML here. I'll use HTML for structure but might need IDs -->
+
             <div
               class="grid grid-cols-4 gap-3"
               id="theme-colors-grid"
               aria-label="اختيار لون الثيم"
+              role="radiogroup"
             >
-              <!-- Javascript will populate this -->
+              <!-- JS will inject the 6 buttons here -->
             </div>
           </div>
         </div>
@@ -3195,6 +3184,6 @@
       </div>
     </div>
 
-    <script src="/js/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
